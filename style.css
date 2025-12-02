@@ -59,9 +59,8 @@ html{
      justify-content: center;
 }
 .main-container{
-    width: 90%;
+    width: 95%;
     height: 90vh;
-    background-color: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-radius: 30px;
@@ -71,13 +70,13 @@ html{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
-    padding: 15px;
+    padding: 10px;
+    gap: 5px;
 }
 /* #Navbar */
 .navbar{
-  height: 70px;
-  width: 600px;
+  height: 50px;
+  width: 500px;
   border: 1px solid ;
   border-radius: 50px;
   position: relative;
@@ -159,31 +158,28 @@ html{
     display: flex;
 }
 .Home-l-contant{
-  flex-basis: 50%;
+  flex-basis: 55%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .introduction{
-  padding-left: 60px;
-}
-.Home-l-contant .intro {
-  font-size: var(--fs5);
-  line-height: 60px;
+  padding-left: 50px;
 }
 .intro span:nth-of-type(1) {
-  font-size: var(--fs5);
+  font-size: 25px;
   font-family: cursive;
+  line-height: 60px;
 }
 .intro span:nth-of-type(2) {
-  font-size: 45px;
+  font-size: 40px;
   font-family: "Roboto",sans-serif;
   font-weight: 700;
   /* color: rgb(5, 2, 91); */
   text-transform: uppercase;
 }
 .Bio {
-  font-size: var(--fs2);
+  font-size: 18px;
   font-weight: var(--fw1);
   width: 90%;
   height: auto;
@@ -241,24 +237,71 @@ html{
 }
 .Home-r-contant .main-pic{
   height: auto;
-  width: 60%;
+  width: 70%;
   /* backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);  */
   border: 2px solid var(--bdr);
   filter: brightness(90%);
-  border-radius: 40% 20px/ 20px 50% ;
+  border-radius: 10% ;
   /* filter: drop-shadow(0 0 10px rgba(151, 149, 149, 0.608)); */
   box-shadow: inset 0px 0px 10px rgba(20, 20, 20, 0.3), 0 0 10px rgba(255,255,255,0.7);
-  transform: rotate(-8deg);
-  transition: 0.5s ease-in;
+  transition: 0.3s linear;
 }
 .Home-r-contant .main-pic:hover{
-  transform: rotate(0deg);
-   box-shadow: 0 0 15px rgba(255, 255, 255, 0.68);
-   transform: scale(1.15);
+   transform: scale(1.1);
+}
+ 
+
+
+
+
+
+
+
+
+
+@keyframes fade-in{
+  from{
+    opacity: 0;
+    transform:translatey(-50px) scale(0.8);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
 }
 
+.fade-in{
+  animation: fade-in .5s linear;
+}
 
+@keyframes fade-up{
+  from{
+    opacity: 0;
+    transform: translateY(20px) scale(0.4);
+  }
+  to{
+    opacity: 1;
+     transform: translateY(0px) scale(1);
+  }
+}
+.fade-up{
+  animation: fade-up 0.7s linear;
+}
+
+@keyframes fade-out{
+  from{
+    opacity: 0;
+    transform: scale(0.6) ;
+  }
+  to{
+    opacity: 1;
+    transform: scale(1) ;
+  }
+}
+.fade-out{
+  animation: fade-out 0.6s linear;
+}
 
 
 
