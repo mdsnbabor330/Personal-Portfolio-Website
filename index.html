@@ -17,19 +17,22 @@
     <!-- Google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Borel&family=Onest:wght@100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
 
     <!-- custom css link -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
     <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <div class="bg-img">
       <img
-        src="/Personal-Portfolio-Website/assets/bg-img2.jpg"
+        src="/Personal-Portfolio-Website/assets/f-bg-img.jpg"
         alt="background img"
       />
     </div>
@@ -37,25 +40,25 @@
       <article class="main-container">
         <header class="navbar">
           <!-- <img src="/assets/msb.png" class="Mlogo hide1" alt="Logo" /> -->
-          <a href="#Home">
-            <span class="navbar-item active hide1">Home</span>
-            <i class="fa-solid fa-house nav-icon"></i>
+          <a href="#Home" class="active">
+            <!-- <i class="fa-solid fa-house nav-icon"></i> -->
+            Home
           </a>
           <a href="#About">
-            <span class="navbar-item hide1">About</span>
-            <i class="fa-solid fa-screwdriver-wrench nav-icon"></i>
-          </a>
-          <a href="#Skils">
-            <i class="fa-solid fa-briefcase nav-icon"></i
-            ><span class="navbar-item hide1">Skils</span></a
+            <!-- <i class="fa-solid fa-screwdriver-wrench nav-icon"></i> -->
+            About</a
           >
-          <a href="#Portfolio">
-            <i class="fa-solid fa-briefcase nav-icon"></i
-            ><span class="navbar-item hide1">Portfolio</span></a
+          <a href="#Skils">
+            <!-- <i class="fa-solid fa-screwdriver-wrench nav-icon"></i> -->
+            Skils</a
+          >
+          <a href="#Work">
+            <!-- <i class="fa-solid fa-briefcase nav-icon"></i
+            >-->Work</a
           >
           <a href="#Contact">
-            <i class="fa-solid fa-phone nav-icon"></i
-            ><span class="navbar-item hide1">Contact</span></a
+            <!-- <i class="fa-solid fa-phone nav-icon"></i
+            >-->Contact</a
           >
           <div class="fill"></div>
         </header>
@@ -75,7 +78,7 @@
 
                 <div class="social-icon">
                   <a href=""
-                    ><button class="downloadCV fade-up">Download CV</button></a
+                    ><button class="btn fade-up">Download CV</button></a
                   >
                   <a href=""><i class="fa-brands fa-facebook-f fade-up"></i></a>
                   <a href=""
@@ -95,7 +98,7 @@
           </section>
 
           <section class="About-container" id="About">
-            <h2 class="about">ABOUT ME</h2>
+            <h2 class="about title">ABOUT Me</h2>
             <div class="ab-contant">
               <div class="ab-sub-l-content">
                 <div class="ab-img">
@@ -115,45 +118,97 @@
               </div>
               <div class="ab-sub-r-content">
                 <div class="edu-box">
-                  <h1 class="edu"> <i class="fa-solid fa-graduation-cap"></i>EDUCATION</h1>
-                  <div class="edu-info">
-                    <span>
-                    <h2>BSC In CSE</h2>
-                    <h3>
-                      Institude: International Islamic University Chittagong
-                    </h3>
-                    <p>
-                      Session : 2024-2027 <br />Result : Running(3rd Semester)
-                    </p></span>
+                  <div class="ed-con">
+                    <h2 class="edu">
+                      <i class="fa-solid fa-graduation-cap"></i>EDUCATION
+                    </h2>
+                    <div class="edu-info">
+                      <article>
+                        <div class="h4">BSC In CSE</div>
+                        <div class="h5">
+                          Institude: International Islamic University Chittagong
+                        </div>
+                        <p>
+                          Session : 2024-2027 <br />Result : Running(3rd
+                          Semester)
+                        </p>
+                      </article>
+                    </div>
+                    <div class="edu-info">
+                      <article>
+                        <div class="h4">Higher Secondary Certificate (HSC)</div>
+                        <div class="h5">Institude: Kulgaon City Corporation College</div>
+                        <p>
+                          Session : 2021-2023 <br />Result : GPA 0.00 out of
+                          0.00
+                        </p>
+                      </article>
+                    </div>
+                    <div class="edu-info">
+                      <article>
+                        <div class="h4">Secondary School Certificate (SSC)</div>
+                        <div class="h5">Institude: Madarsha M.L. High School</div>
+                        <p>
+                          Session : 2020-2021 <br />Result : GPA 0.00 out of
+                          0.00
+                        </p>
+                      </article>
+                    </div>
                   </div>
-                  <div class="edu-info">
-                    <span>
-                    <h2>Higher Secondary Certificate (HSC)</h2>
-                    <h3>Institude: Kulgaon City Corporation College</h3>
-                    <p>
-                      Session : 2021-2023 <br />Result : GPA 0.00 out of 0.00
-                    </p></span>
-                  </div>
-                  <div class="edu-info">
-                    <span>
-                    <h2>Secondary School Certificate (SSC)</h2>
-                    <h3>Institude: Madarsha M.L. High School</h3>
-                    <p>
-                      Session : 2020-2021 <br />Result : GPA 0.00 out of 0.00
-                    </p></span>
+
+                  <hr class="vline" />
+
+                  <div class="ed-con">
+                    <h2 class="edu">
+                      <i class="fa-solid fa-trophy"></i>ACHIEVEMENTS
+                    </h2>
+                    <div class="edu-info">
+                      <article>
+                        <div class="h4">Lorem ipsum dolor sit elit.</div>
+                        <div class="h5">Lorem ipsum dolor sit amet.</div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Nobis, asperiores earum.
+                        </p>
+                      </article>
+                    </div>
+                    <div class="edu-info">
+                      <article>
+                        <div class="h4">Lorem ipsum dolor sit elit.</div>
+                        <div class="h5">Lorem ipsum dolor sit amet.</div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Nobis, asperiores earum.
+                        </p>
+                      </article>
+                    </div>
+                    <div class="edu-info">
+                      <article>
+                        <div class="h4">Lorem ipsum dolor sit elit.</div>
+                        <div class="h5">Lorem ipsum dolor sit amet.</div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Nobis, asperiores earum.
+                        </p>
+                      </article>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <hr>
+          <hr />
           <section class="Skils-container" id="Skils">
-
+            <h2 class="skils title">SKILS</h2>
           </section>
           <hr />
-          <section class="Project-container" id="Portfolio"></section>
+          <section class="Work-container" id="Work">
+            <h2 class="work title">WORK</h2>
+          </section>
           <hr />
-          <section class="Contact-container" id="Contact"></section>
+          <section class="Contact-container" id="Contact">
+            <h2 class="contact title">CONTACT Me</h2>
+          </section>
         </section>
       </article>
     </main>
