@@ -4,10 +4,10 @@ document.addEventListener("contextmenu",function(e){
 });
 
 //for navbar
-const links = document.querySelectorAll(".navbar a");
+const links = document.querySelectorAll(".navbar i");
 links.forEach(link => {
   link.addEventListener("click", () => {
-    document.querySelector(".navbar a.active")?.classList.remove("active");
+    document.querySelector(".navbar .active")?.classList.remove("active");
     link.classList.add("active");
   });
 });

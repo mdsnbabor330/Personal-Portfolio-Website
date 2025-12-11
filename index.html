@@ -27,193 +27,131 @@
     <!-- custom css link -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="animation.css" />
-    <link rel="stylesheet" href="responsive.css" />
   </head>
+
+
   <body>
-    <div class="bg-img">
-      <img
-        src="/Personal-Portfolio-Website/assets/f-bg-img.jpg"
-        alt="background img"
-      />
-    </div>
-    <main class="main">
-      <article class="main-container">
-        <header class="navbar">
-          <!-- <img src="/assets/msb.png" class="Mlogo hide1" alt="Logo" /> -->
-          <a href="#Home" class="active">
-            <!-- <i class="fa-solid fa-house nav-icon"></i> -->
-            Home
-          </a>
-          <a href="#About">
-            <!-- <i class="fa-solid fa-screwdriver-wrench nav-icon"></i> -->
-            About</a
-          >
-          <a href="#Skils">
-            <!-- <i class="fa-solid fa-screwdriver-wrench nav-icon"></i> -->
-            Skils</a
-          >
-          <a href="#Work">
-            <!-- <i class="fa-solid fa-briefcase nav-icon"></i
-            >-->Work</a
-          >
-          <a href="#Contact">
-            <!-- <i class="fa-solid fa-phone nav-icon"></i
-            >-->Contact</a
-          >
-          <div class="fill"></div>
-        </header>
-        <section class="sub-container cus-scrollbar">
-          <section class="Home-container" id="Home">
-            <div class="Home-l-contant">
-              <div class="introduction">
-                <p class="intro fade-in">
-                  <span>Hy! I AM </span><br />
-                  <span> Mohammad Nahid Uddin</span>
-                </p>
-                <p class="Bio fade-in">
-                  I'm a <span>Frontend Developer</span> with strong skill in
-                  HTML, CSS, JavaScript etc. I create beautiful and engaging web
-                  applications using clean code and user-friendly design.
-                </p>
+    <!-- <button class="d-l-btn">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+          </button> -->
 
-                <div class="social-icon">
-                  <a href=""
-                    ><button class="btn fade-up">Download CV</button></a
-                  >
-                  <a href=""><i class="fa-brands fa-facebook-f fade-up"></i></a>
-                  <a href=""
-                    ><i class="fa-brands fa-linkedin-in fade-up"></i
-                  ></a>
-                  <a href=""><i class="fa-brands fa-github fade-up"></i></a>
-                </div>
-              </div>
+    <nav class="navbar f-i-left">
+      <a href="#Home">
+        <i class="fa-solid fa-house nav-icon active"></i>
+        <span class="nav-name">HOME</span></a
+      >
+      <a href="#About">
+        <i class="fa-solid fa-id-badge nav-icon"></i>
+        <span class="nav-name">ABOUT</span></a
+      >
+      <a href="#Edu">
+        <i class="fa-solid fa-graduation-cap nav-icon"></i>
+        <span class="nav-name">EDUCATION</span></a
+      >
+      <a href="#Skils">
+        <i class="fa-solid fa-screwdriver-wrench nav-icon"></i>
+        <span class="nav-name">SKILS</span></a
+      >
+      <a href="#Achiev">
+        <i class="fa-solid fa-trophy nav-icon"></i>
+        <span class="nav-name">ACHIEVMENTS</span></a
+      >
+      <a href="#Portfolio">
+        <i class="fa-solid fa-briefcase nav-icon"></i>
+        <span class="nav-name">PORTFOLIO</span></a
+      >
+      <a href="#Blog">
+        <i class="fa-solid fa-camera nav-icon"></i>
+        <span class="nav-name">BLOGS</span></a
+      >
+      <a href="#Contact">
+        <i class="fa-solid fa-message nav-icon"></i>
+        <span class="nav-name">CONTACT</span></a
+      >
+    </nav>
+    <main class="main-container">
+      <section class="Home area" id="Home">
+        <div class="H-contant">
+        <div class="Home-l-contant">
+          <div class="introduction">
+            <p class="title fade-in">welcome to my world!</p>
+            <h1 class="fade-in">Hi, I'm <span> Nahid Uddin</span></h1>
+            <p class="Bio fade-in">
+              I'm a <span>Frontend Developer</span> with strong skill in HTML,
+              CSS, JavaScript etc. I create beautiful and engaging web
+              applications using clean code and <br>user-friendly design.
+            </p>
+
+            <p class="title fade-up">find with me</p>
+            <div class="social-icon fade-up">
+              <a href="https://www.facebook.com/share/17cs35X9Fm/"
+                ><i class="fa-brands fa-facebook-f fade-up find-i"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/md-sn-babor-5a1375325/"
+                ><i class="fa-brands fa-linkedin-in fade-up find-i"></i
+              ></a>
+              <a href="https://github.com/mdsnbabor330"
+                ><i class="fa-brands fa-github fade-up find-i"></i
+              ></a>
             </div>
-            <div class="Home-r-contant">
-              <img
-                src="/Personal-Portfolio-Website/assets/main-pic.jpg"
-                alt="Profile-pic"
-                class="main-pic fade-out"
-              />
-            </div>
-          </section>
-
-          <section class="About-container" id="About">
-            <h2 class="about title">ABOUT Me</h2>
-            <div class="ab-contant">
-              <div class="ab-sub-l-content">
-                <div class="ab-img">
-                  <img
-                    src="/Personal-Portfolio-Website/assets/sec-pic.jpg"
-                    alt="sec-pic"
-                  />
-                  <div class="ab-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Hic, ut dolorem soluta repudiandae id corrupti sint earum
-                    necessitatibus. Incidunt, dolorem. Lorem, ipsum dolor sit
-                    amet consectetur adipisicing elit. Reiciendis quis nulla
-                    eveniet deserunt ut vero consectetur sapiente doloremque
-                    rerum totam.
-                  </div>
-                </div>
-              </div>
-              <div class="ab-sub-r-content">
-                <div class="edu-box">
-                  <div class="ed-con">
-                    <h2 class="edu">
-                      <i class="fa-solid fa-graduation-cap"></i>EDUCATION
-                    </h2>
-                    <div class="edu-info">
-                      <article>
-                        <div class="h4">BSC In CSE</div>
-                        <div class="h5">
-                          Institude: International Islamic University Chittagong
-                        </div>
-                        <p>
-                          Session : 2024-2027 <br />Result : Running(3rd
-                          Semester)
-                        </p>
-                      </article>
-                    </div>
-                    <div class="edu-info">
-                      <article>
-                        <div class="h4">Higher Secondary Certificate (HSC)</div>
-                        <div class="h5">Institude: Kulgaon City Corporation College</div>
-                        <p>
-                          Session : 2021-2023 <br />Result : GPA 0.00 out of
-                          0.00
-                        </p>
-                      </article>
-                    </div>
-                    <div class="edu-info">
-                      <article>
-                        <div class="h4">Secondary School Certificate (SSC)</div>
-                        <div class="h5">Institude: Madarsha M.L. High School</div>
-                        <p>
-                          Session : 2020-2021 <br />Result : GPA 0.00 out of
-                          0.00
-                        </p>
-                      </article>
-                    </div>
-                  </div>
-
-                  <hr class="vline" />
-
-                  <div class="ed-con">
-                    <h2 class="edu">
-                      <i class="fa-solid fa-trophy"></i>ACHIEVEMENTS
-                    </h2>
-                    <div class="edu-info">
-                      <article>
-                        <div class="h4">Lorem ipsum dolor sit elit.</div>
-                        <div class="h5">Lorem ipsum dolor sit amet.</div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Nobis, asperiores earum.
-                        </p>
-                      </article>
-                    </div>
-                    <div class="edu-info">
-                      <article>
-                        <div class="h4">Lorem ipsum dolor sit elit.</div>
-                        <div class="h5">Lorem ipsum dolor sit amet.</div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Nobis, asperiores earum.
-                        </p>
-                      </article>
-                    </div>
-                    <div class="edu-info">
-                      <article>
-                        <div class="h4">Lorem ipsum dolor sit elit.</div>
-                        <div class="h5">Lorem ipsum dolor sit amet.</div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Nobis, asperiores earum.
-                        </p>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <hr />
-          <section class="Skils-container" id="Skils">
-            <h2 class="skils title">SKILS</h2>
-          </section>
-          <hr />
-          <section class="Work-container" id="Work">
-            <h2 class="work title">WORK</h2>
-          </section>
-          <hr />
-          <section class="Contact-container" id="Contact">
-            <h2 class="contact title">CONTACT Me</h2>
-          </section>
-        </section>
-      </article>
+          </div>
+        </div>
+        <div class="Home-r-contant fade-out">
+          <div class="img-box ">
+            <img
+              src="/Personal-Portfolio-Website/assets/main-pic.jpg"
+              alt="Profile-pic"
+              class="main-pic "
+            />
+          </div>
+        </div></div>
+      </section>
+      <hr />
+      <section class="About area" id="About">
+        <div class="A-contant">
+          <h1>hello</h1>
+        </div>
+        
+      </section>
+      <hr />
+      <section class="Education area" id="Edu">
+        <div class="E-contant">
+          <h1>hello</h1>
+        </div>
+      </section>
+      <hr />
+      <section class="Skils area" id="Skils">
+        <div class="S-contant">
+          <h1>hello</h1>
+        </div>
+      </section>
+      <hr />
+      <section class="Acievments area" id="Achiev">
+        <div class="A-contant">
+          <h1>hello</h1>
+        </div>
+      </section>
+      <hr />
+      <section class="Portfolio area" id="Portfolio">
+        <div class="P-contant">
+          <h1>hello</h1>
+        </div>
+      </section>
+      <hr />
+      <section class="Blog area" id="Blog">
+        <div class="B-contant">
+          <h1>hello</h1>
+        </div>
+      </section>
+      <hr />
+      <section class="Contact area" id="Contact">
+       <div class="C-contant">
+          <h1>hello</h1>
+        </div>
+      </section>
     </main>
 
-    <!-- Custom JavaScript link -->
     <script src="app.js"></script>
   </body>
 </html>
