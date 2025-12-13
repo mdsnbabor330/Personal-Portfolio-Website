@@ -3,23 +3,14 @@
     initial-value: 0deg;
     inherits: true;
 }
-.img-box::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: conic-gradient(from var(--angle),var(--color-secondary),var(--color-secondary), var(--color-primary),var(--color-secondary),var(--color-secondary), var(--color-primary),var(--color-secondary));
-    box-shadow: var(--shadow-white);
-    border-radius: inherit;
-    z-index: -11;
-    padding: 3px;
-    animation: spin 7s linear infinite;
-}
+
 @keyframes spin{
     to{
         --angle:360deg;
     }
 }
+
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -63,25 +54,12 @@
   animation: fade-out 0.6s linear;
 }
 
-@keyframes f-i-left {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.f-i-left {
-  animation: fade-out 0.6s linear;
-}
 
 /* for bottom entry and top exit */
 .Top-exit{
   animation: T-exit 0.4s linear;
   animation-timeline: view();
-  animation-range: exit 10%;
+  animation-range: exit 5%;
 }
 @keyframes T-exit{
    from{
@@ -90,7 +68,7 @@
   }
   to{
     opacity: 0;
-    transform: translateY(-100px) scale(0.8);
+    transform: translateY(-100px) scale(0.5);
   }
   
 }
@@ -143,5 +121,56 @@
   to{
     opacity: 1;
     transform: translateX(0px) scale(1);
+  }
+}
+
+/* #for skills progress bar */
+
+.prog-98{
+  animation: pr-98 0.7s ease forwards;
+}
+@keyframes pr-98{
+  to{
+    width: 98%;
+  }
+}
+.prog-95{
+  animation: pr-95 0.7s ease forwards;
+}
+@keyframes pr-95{
+  to{
+    width: 95%;
+  }
+}
+.prog-90{
+  animation: pr-90 0.7s ease forwards;
+}
+@keyframes pr-90{
+  to{
+    width: 90%;
+  }
+}
+.prog-80{
+  animation: pr-80 0.7s ease forwards;
+}
+@keyframes pr-80{
+  to{
+    width: 80%;
+  }
+}
+.prog-85{
+  animation: pr-85 0.7s ease forwards;
+}
+@keyframes pr-85{
+  to{
+    width: 85%;
+  }
+}
+.prog-70{
+  animation: pr-70 0.7s ease forwards;
+}
+@keyframes pr-70{
+  to{
+    width: 70%;
   }
 }
