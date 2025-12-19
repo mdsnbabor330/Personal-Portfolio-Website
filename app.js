@@ -74,6 +74,6 @@ let form = document.getElementById('contact-form');
                 setTimeout(() =>{
                 window.location.href = "#contact-r8";
                 location.reload();
-                } ,1000);
+                } ,300);
             });
         });

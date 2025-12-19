@@ -445,6 +445,7 @@ a {
   font-size: var(--large-f1-size);
   font-weight: 700;
   color: var(--color-primary);
+ 
 }
 .A-Box2 .exp {
   line-height: 50px;
@@ -706,7 +707,6 @@ a {
 .S-Box3 {
   grid-area: 5 / 4 / 7 / 7;
   padding: 10px;
-  min-width: 500px;
 }
 .sf-skils {
   margin-top: 15px;
@@ -762,14 +762,16 @@ a {
 }
 .ac-box {
  position: relative;
-min-width: 450px;
+min-width: 480px;
+ min-height: 180px;
 overflow: hidden;
+border-right: 5px solid var(--color-primary);
+border-left: 2px solid var(--color-primary);
 }
 .ac-box h5{
 font-size: var(--h6);
 font-family: var(--font-secondary);
 color: var(--color-primary);
-line-height: 38px;
 }
 .ac-box p{
   font-size: var(--font-size-f2);
@@ -782,7 +784,6 @@ line-height: 38px;
   top: -100%;
   width: 100%;
   height: 100%;
-  border-radius: inherit;
   background: var(--gradient-icon-h);
   transition: 0.2s linear;
   z-index: -1;
@@ -854,7 +855,8 @@ line-height: 38px;
   transition: 0.4s linear;
 }
 .pfo{
-  min-width: 320px;
+  min-width: 350px;
+  min-height: 300px;
 }
 .pfo:hover> .img-box3 img{
   transform: scale(1.1);
@@ -899,12 +901,18 @@ line-height: 38px;
 }
 .B-Box1 .img-box4 img{
   position: relative;
+  position: relative;
   width: 110%;
   height: auto;
+  filter: grayscale(1);
+  transition: 0.4s linear;
 }
 .box-b img{
+  position: relative;
   width: 110%;
   height: auto;
+  filter: grayscale(1);
+   transition: 0.4s linear;
 }
 .Blog h4{
   font-size: var(--font-size-f3);
@@ -923,7 +931,13 @@ line-height: 38px;
 }
 .blog-box-b{
   min-width: 350px;
+  min-height: 300px;
 }
+.blog-box-b:hover > .img-box4 > img {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+
 
 /* Contact-page */
 
