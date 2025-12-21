@@ -188,6 +188,27 @@ a {
   align-items: center;
   padding: 50px;
 }
+.ptitle{
+  position: absolute;
+  text-align: center;
+  top: 30px;
+  left: 0;right: 0;
+  margin: auto;
+  line-height: 28px;
+}
+.ptitle h6{
+  font-size: var(--font-size-f1);
+  letter-spacing: 3px;
+  font-weight: 300;
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+}
+.ptitle h3{
+  font-size: var(--h5);
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: var(--color-tertiary);
+}
 
 /* #Home-Page */
 .Home {
@@ -317,20 +338,6 @@ a {
   border-radius: 20px;
 }
 
-.Page-title {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  padding: 8px 15px;
-  border-radius: 10px;
-  background: var(--gradient-box-w);
-  box-shadow: var(--shadow-white);
-  font-family: cursive;
-  font-size: var(--font-size-f3);
-  color: var(--color-tertiary);
-  text-transform: uppercase;
-  font-weight: 500;
-}
 /* About-page */
 
 .About {
@@ -347,6 +354,7 @@ a {
   justify-content: center;
   padding-left: 60px;
   border-radius: 20px;
+  margin-top: 60px;
 }
 .A-Box1 {
   grid-area: 1 / 1 / 7 / 3;
@@ -724,6 +732,14 @@ a {
   color: var(--color-primary);
   margin-right: 5px;
 }
+@media (max-height: 1000px) {
+  .Skils .devB p {
+    margin-bottom: 20px;
+  }
+  .skill {
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 1400px) {
   .Skils .devB p {
     margin-bottom: 15px;
@@ -732,7 +748,7 @@ a {
     margin-bottom: 10px;
   }
   .sf-skils {
-    margin-top: 10px;
+    margin-top: 5px;
     gap: 5px;
   }
 }
@@ -855,8 +871,7 @@ color: var(--color-primary);
   transition: 0.4s linear;
 }
 .pfo{
-  min-width: 350px;
-  min-height: 300px;
+  min-width: 320px;
 }
 .pfo:hover> .img-box3 img{
   transform: scale(1.1);
@@ -931,7 +946,7 @@ color: var(--color-primary);
 }
 .blog-box-b{
   min-width: 350px;
-  min-height: 300px;
+  min-height: 250px;
 }
 .blog-box-b:hover > .img-box4 > img {
   transform: scale(1.1);
@@ -945,6 +960,7 @@ color: var(--color-primary);
   justify-content: center;
 }
 .C-contant {
+  margin-top: 60px;
   height: 80vh;
   width: 100%;
   display: flex;
@@ -957,7 +973,7 @@ color: var(--color-primary);
   position: relative;
   min-width: 380px;
   width: 35%;
-  height: inherit;
+  height: 95%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -989,7 +1005,7 @@ color: var(--color-primary);
   position: relative;
   min-width: 560px;
   width: 45%;
-  height: inherit;
+  height: 95%;
 }
 .form{
   width: 100%;

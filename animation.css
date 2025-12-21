@@ -59,7 +59,7 @@
 .Top-exit{
   animation: T-exit 0.4s linear;
   animation-timeline: view();
-  animation-range: exit 5%;
+  animation-range: exit  40%;
 }
 @keyframes T-exit{
    from{
