@@ -732,15 +732,19 @@ a {
   color: var(--color-primary);
   margin-right: 5px;
 }
-@media (max-height: 1000px) {
+@media screen and (max-height: 920px) {
   .Skils .devB p {
     margin-bottom: 20px;
   }
   .skill {
-    margin-bottom: 30px;
+    margin-bottom: 4%;
+  }
+  .sf-skils{
+    margin: 0;
   }
 }
-@media (max-width: 1400px) {
+
+@media screen and (max-width: 1400px) {
   .Skils .devB p {
     margin-bottom: 15px;
   }
@@ -839,14 +843,14 @@ color: var(--color-primary);
 .P-Box6 {
   grid-area: 4 / 5 / 7 / 7;
 }
-.Portfolio h6{
+.Portfolio h5{
   cursor: pointer;
   margin-top: 15px;
   font-size: var(--h6);
   color: var(--color-primary);
   transition: 0.4s linear;
 }
-.Portfolio h6 i{
+.Portfolio h5 i{
   transform: rotate(-90deg);
   transition: 0.4s linear;
 }
